@@ -79,7 +79,7 @@ include file="pageconfig.jspf"
     response.setContentType(mimeType);
 
     try {
-        response.setHeader("content-disposition", "attachment; filename="
+        response.setHeader("content-disposition", "inline; filename="
             + f.getName());
         OutputStream o = response.getOutputStream();
         byte[] buffer = new byte[8192];

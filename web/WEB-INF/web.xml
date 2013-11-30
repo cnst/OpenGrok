@@ -5,13 +5,13 @@
   <description>A wicked fast source browser</description>
   <context-param>
     <param-name>CONFIGURATION</param-name>
-    <param-value>/var/opengrok/etc/configuration.xml</param-value>
+    <param-value>/grok/minist/configuration.xml</param-value>
     <description>Full path to the configuration file where OpenGrok can read it's configuration</description>
   </context-param>
   
   <context-param>
     <param-name>ConfigAddress</param-name>
-    <param-value>localhost:2424</param-value>
+    <param-value>localhost:2499</param-value>
     <description>An address where OpenGrok can receive new configuration</description>
   </context-param>
 

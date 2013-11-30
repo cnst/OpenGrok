@@ -280,6 +280,7 @@ public class AnalyzerGuru {
         doc.add(new Field(QueryBuilder.FULLPATH, file.getAbsolutePath(),
             string_ft_nstored_nanalyzed_norms));
 
+	/*CNST
         try {
             HistoryReader hr = HistoryGuru.getInstance().getHistoryReader(file);
             if (hr != null) {
@@ -288,7 +289,7 @@ public class AnalyzerGuru {
             }
         } catch (HistoryException e) {
             OpenGrokLogger.getLogger().log(Level.WARNING, "An error occurred while reading history: ", e);
-        }    
+        }    CNST*/
         doc.add(new Field(QueryBuilder.DATE, date, string_ft_stored_nanalyzed_norms));
         if (path != null) {
             doc.add(new TextField(QueryBuilder.PATH, path, Store.YES));
